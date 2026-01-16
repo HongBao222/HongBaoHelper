@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#f8f9fa">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎁 抢红包助手"
+        android:textSize="32sp"
+        android:textColor="#2196F3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        android:textStyle="bold"/>
+
+    <!-- 悬浮窗权限按钮 -->
+    <Button
+        android:id="@+id/btn_permission"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="🔓 第一步：开启悬浮窗权限"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 无障碍服务按钮 -->
+    <Button
+        android:id="@+id/btn_open_settings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="⚙️ 第二步：开启无障碍服务"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- 服务开关控制面板 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="第三步：启动开关"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+
+        <Switch
+            android:id="@+id/switch_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 状态提示文字 -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请按顺序完成以上三步"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"/>
+
+    <!-- 使用说明卡片 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 使用说明：\n1. 点击第一步按钮开启悬浮窗权限\n2. 点击第二步按钮，在系统设置中找到本应用并开启\n3. 返回本应用，打开上方开关\n4. 回到微信聊天界面，即可自动抢红包"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:lineSpacingExtra="8dp"
+        android:elevation="2dp"/>
+
+</LinearLayout>
